@@ -22,9 +22,14 @@
     src: url("../Fonts/Museo/MuseoSansCyrl900.woff") format("woff");
     font-weight: 900;
 }
-.cottage {
+.button {
     background: radial-gradient(31.58% 218.14% at 50% 50%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(92.7deg, #E9C878 0%, #C1A050 100%);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 220px;box-shadow: 0px 10px 50px rgba(233, 200, 120, 0.5);
+    border-radius: 220px;
+    box-shadow: 0px 10px 50px rgba(233, 200, 120, 0.5);
     border-radius: 250px;
+}
+.input1 {
+    background: #F5F5F5;
+    box-shadow: inset 0px 2px 0px #EBEBEB;
 }

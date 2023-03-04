@@ -9,7 +9,7 @@
     <title>Главная</title>
 </head>
 <body>
-    <header class="min-h-[800px] xl:min-h-[850px] w-full bg-[url('Assets/Images/header/background.png')] bg-cover text-white px-4">
+    <header class="min-h-[800px] xl:min-h-[850px] w-full bg-[url('Assets/Images/header/background.png')] bg-cover text-white px-4 pb-7 md:pb-0">
         <nav class="container mx-auto py-6 flex flex-col gap-4 lg:gap-0 lg:flex-row lg:items-center lg:justify-between font-['Museo']">
             <p class="text-[28px] font-['Neumann']">CRUKSHINO VILLAGE</p>
             <div class="flex items-center gap-2">
@@ -21,7 +21,7 @@
             </div>
             <div class="flex flex-col lg:text-right mt-1 lg:mt-0">
                 <p class="font-[300]">Есть вопросы? <span class="text-[#E9C878]">Звоните!</span></p>
-                <p class="text-[26px] font-[500]">+7 (925) 211-91-23</p>
+                <a href="tel:+7 (925) 211-91-23" class="text-[26px] font-[500]">+7 (925) 211-91-23</a>
                 <div class="flex items-center gap-2">
                     <img src="Assets/Images/header/point.svg" alt="">
                     <p class="font-[300]">Время работы: с 8 до 20</p>
@@ -36,7 +36,7 @@
             </div>
         </div>
         <div class="container mx-auto flex flex-col lg:flex-row gap-14 lg:items-center xl:-mt-[3px] lg:gap-72 xl:gap-[500px] mt-6">
-            <button class="flex items-center gap-6 py-5 lg:py-6 px-6 lg:px-9 cottage w-fit">
+            <button class="flex items-center gap-6 py-5 lg:py-6 px-6 lg:px-9 button w-fit">
                 <img src="Assets/Images/header/house.svg" alt="">
                 <p class="text-sm font-['Museo'] font-[900] text-[#6E5A45] uppercase rounded-full">Выбирайте свой коттедж</p>
             </button>
@@ -49,6 +49,30 @@
             </div>
         </div>
     </header>  
+
+    <div class="w-full bg-white xl:p-2.5 xl:rounded-r-2xl xl:w-[93%] 2xl:w-fit xl:absolute xl:top-[663px]">
+        <div class="flex relative xl:pt-14 xl:pr-[75px] xl:border xl:rounded-r-2xl gap-5 w-full xl:-ml-2.5 xl:w-[calc(100%+10px)] max-[1280px]:container max-[1280px]:mx-auto px-4 xl:px-0 py-12 xl:py-0">
+            <img src="Assets/Images/offer/phone.png" alt="" class="xl:-mb-2.5 hidden xl:block">
+            <div class="ml-2.5 w-10 h-0.5 rounded-[20px] bg-gradient-to-r from-transparent to-[#E9C878] mt-4 hidden xl:block"></div>
+            <div class="flex flex-col lg:flex-row gap-5 lg:gap-7 lg:justify-center text-center lg:text-left">
+                <div class="flex flex-col gap-2.5 lg:gap-5 lg:w-1/2 xl:w-[510px]">
+                    <p class="font-['Museo'] text-[22px] lg:text-[26px] font-[700] text-[#28292E]">Персональное предложение именно для Вас!</p>
+                    <p class="font-['Museo'] font-[400] md:text-xl text-[#28292ECC]">Введите свой номер телефона, и мы перезвоним Вам в течение 15 минут для консультации: <br class="hidden lg:block">  Уточним у Вас все параметры Ваших предпочтений и предложим Вам лучший вариант!</p>
+                </div>
+                <div class="flex flex-col gap-2.5 items-center">
+                    <input class="flex items-center justify-center gap-6 py-6 lg:py-7 px-6 lg:px-9 w-full text-center input1 rounded-full" placeholder="Введите номер телефона"></input>
+                    <button class="flex items-center gap-6 py-5 lg:py-6 px-6 lg:px-9 button w-full justify-center">
+                        <img src="Assets/Images/header/house.svg" alt="">
+                        <p class="text-sm font-['Museo'] font-[900] text-[#6E5A45] uppercase rounded-full w-fit">Получить предложение</p>
+                    </button>
+                    <div class="text-sm font-['Museo'] font-[300] text-[#28292EB2] w-fit flex flex-col items-center text-center mt-1">
+                        <p>Нажимая на кнопку, вы соглашаетесь с правилами</p> 
+                        <a href="" class="underline">обработки персональных данных</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer></footer>
     
