@@ -9,7 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Главная</title>
 </head>
-<body>
+<body class="text-[#28292E]">
     <header class="min-h-[800px] xl:min-h-[850px] w-full bg-[url('Assets/Images/header/background.png')] bg-cover text-white px-4 pb-7 md:pb-0">
         <nav class="container mx-auto py-6 flex flex-col gap-4 lg:gap-0 lg:flex-row lg:items-center lg:justify-between font-['Museo']">
             <p class="text-[28px] font-['Neumann']">CRUKSHINO VILLAGE</p>
@@ -230,13 +230,13 @@
             <div class="swiper swiper-territory w-full lg:w-1/2">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="Assets/Images/territory/1.png" alt="">
+                        <img src="Assets/Images/territory/1.png" alt="" class="h-full w-full object-cover">
                     </div>
                     <div class="swiper-slide">
-                        <img src="Assets/Images/territory/1.png" alt="">
+                        <img src="Assets/Images/territory/1.png" alt="" class="h-full w-full object-cover">
                     </div>
                     <div class="swiper-slide">
-                        <img src="Assets/Images/territory/1.png" alt="">
+                        <img src="Assets/Images/territory/1.png" alt="" class="h-full w-full object-cover">
                     </div>
                 </div>
             </div>
@@ -259,18 +259,152 @@
             <div class="swiper swiper-transport w-full lg:w-1/2 lg:order-first">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="Assets/Images/territory/2.png" alt="">
+                        <img src="Assets/Images/territory/2.png" alt="" class="h-full w-full object-cover">
                     </div>
                     <div class="swiper-slide">
-                        <img src="Assets/Images/territory/2.png" alt="">
+                        <img src="Assets/Images/territory/2.png" alt="" class="h-full w-full object-cover">
                     </div>
                     <div class="swiper-slide">
-                        <img src="Assets/Images/territory/2.png" alt="">
+                        <img src="Assets/Images/territory/2.png" alt="" class="h-full w-full object-cover">
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="w-full bg-white py-12 md:py-20 lg:py-[120px]">
+        <div class="container mx-auto flex flex-col gap-6 lg:gap-14 px-4">
+            <p class="text-[35px] lg:text-[45px] xl:text-[68px] font-['Neumann'] text-[#28292E] text-center">Дома с участками</p>
+            <div class="flex flex-col items-center w-full mt-4 lg:mt-5">
+                <div class="grid grid-cols-1 md:grid-cols-3 w-full">
+                    <div class="pt-5 pb-6 lg:py-7 gap-6 lg:gap-7 flex flex-col items-center text-center px-5 lg:px-6 relative border">
+                        <p class="absolute font-['Neumann'] text-xl lg:text-[25px] text-[#E9C878] top-5 left-5 lg:top-7 lg:left-9">01</p>
+                        <img src="Assets/Images/houses/2.svg" alt="">
+                        <p class="text-lg font-['Museo'] font-[500]">Предлагаются двухэтажные коттеджи, площадью 126, 135, 120, 131 м2, в едином стиле английского модерна.</p>
+                    </div>
+                    <div class="pt-5 pb-6 lg:py-7 gap-6 lg:gap-7 flex flex-col items-center text-center px-5 lg:px-6 relative border">
+                        <p class="absolute font-['Neumann'] text-xl lg:text-[25px] text-[#E9C878] top-5 left-5 lg:top-7 lg:left-9">02</p>
+                        <img src="Assets/Images/houses/1.svg" alt="">
+                        <p class="text-lg font-['Museo'] font-[500]">Земельные участок, в собственности у каждого владельца дома. </p>
+                    </div>
+                    <div class="pt-5 pb-6 lg:py-7 gap-6 lg:gap-7 flex flex-col items-center text-center px-5 lg:px-6 relative border">
+                        <p class="absolute font-['Neumann'] text-xl lg:text-[25px] text-[#E9C878] top-5 left-5 lg:top-7 lg:left-9">03</p>
+                        <img src="Assets/Images/houses/3.svg" alt="">
+                        <p class="text-lg font-['Museo'] font-[500]">Подведены и подключены все коммуникации: вода, канализация, электричество, отопление.</p>
+                    </div>
+                </div>
+                <img src="Assets/Images/houses/arrow.svg" alt="" class="w-full lg:w-1/3">
+            </div>
+            <div class="flex flex-col gap-6 lg:gap-12">
+                <div class="grid grid-cols-2 grid-rows-4 gap-1 lg:grid-cols-4 lg:grid-rows-2 lg:gap-2.5">
+                    <div class="relative col-span-2 row-span-2">
+                        <img src="Assets/Images/houses/house1/1.png" alt="" class="w-full h-full object-cover">
+                        <div class="flex flex-col gap-1 lg:gap-4 text-white absolute top-5 left-5 lg:top-7 lg:left-9 font-['Museo'] font-[900]">
+                            <p class="text-lg lg:text-[26px]">Коттедж с отделкой 126 кв.м.</p>
+                            <p class="text-2xl lg:text-4xl">1 400 999 ₽</p>
+                        </div>
+                    </div>
+                    <div class="col-span-2 row-span-1">
+                        <img src="Assets/Images/houses/house1/2.png" alt="" class="w-full h-full object-cover">
+                    </div>
+                    <div class="col-span-1 row-span-1">
+                        <img src="Assets/Images/houses/house1/3.png" alt="" class="w-full h-full object-cover">
+                    </div>
+                    <div class="col-span-1 row-span-1">
+                        <img src="Assets/Images/houses/house1/4.png" alt="" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 grid-rows-4 gap-1 lg:grid-cols-4 lg:grid-rows-2 lg:gap-2.5">
+                    <div class="relative col-span-2 row-span-2">
+                        <img src="Assets/Images/houses/house2/1.png" alt="" class="w-full h-full object-cover">
+                        <div class="flex flex-col gap-1 lg:gap-4 text-white absolute top-5 left-5 lg:top-7 lg:left-9 font-['Museo'] font-[900]">
+                            <p class="text-lg lg:text-[26px]">Коттедж с отделкой 135 кв.м.</p>
+                            <p class="text-2xl lg:text-4xl">1 400 999 ₽</p>
+                        </div>
+                    </div>
+                    <div class="col-span-2 row-span-1">
+                        <img src="Assets/Images/houses/house2/2.png" alt="" class="w-full h-full object-cover">
+                    </div>
+                    <div class="col-span-1 row-span-1">
+                        <img src="Assets/Images/houses/house2/3.png" alt="" class="w-full h-full object-cover">
+                    </div>
+                    <div class="col-span-1 row-span-1">
+                        <img src="Assets/Images/houses/house2/4.png" alt="" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 grid-rows-4 gap-1 lg:grid-cols-4 lg:grid-rows-2 lg:gap-2.5">
+                    <div class="relative col-span-2 row-span-2">
+                        <img src="Assets/Images/houses/house3/1.png" alt="" class="w-full h-full object-cover">
+                        <div class="flex flex-col gap-1 lg:gap-4 text-white absolute top-5 left-5 lg:top-7 lg:left-9 font-['Museo'] font-[900]">
+                            <p class="text-lg lg:text-[26px]">Коттедж с отделкой 120 кв.м.</p>
+                            <p class="text-2xl lg:text-4xl">1 400 999 ₽</p>
+                        </div>
+                    </div>
+                    <div class="col-span-2 row-span-1">
+                        <img src="Assets/Images/houses/house3/2.png" alt="" class="w-full h-full object-cover">
+                    </div>
+                    <div class="col-span-1 row-span-1">
+                        <img src="Assets/Images/houses/house3/3.png" alt="" class="w-full h-full object-cover">
+                    </div>
+                    <div class="col-span-1 row-span-1">
+                        <img src="Assets/Images/houses/house3/4.png" alt="" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 grid-rows-4 gap-1 lg:grid-cols-4 lg:grid-rows-2 lg:gap-2.5">
+                    <div class="relative col-span-2 row-span-2">
+                        <img src="Assets/Images/houses/house4/1.png" alt="" class="w-full h-full object-cover">
+                        <div class="flex flex-col gap-1 lg:gap-4 text-white absolute top-5 left-5 lg:top-7 lg:left-9 font-['Museo'] font-[900]">
+                            <p class="text-lg lg:text-[26px]">Коттедж с отделкой 131 кв.м.</p>
+                            <p class="text-2xl lg:text-4xl">1 400 999 ₽</p>
+                        </div>
+                    </div>
+                    <div class="col-span-2 row-span-1">
+                        <img src="Assets/Images/houses/house4/2.png" alt="" class="w-full h-full object-cover">
+                    </div>
+                    <div class="col-span-1 row-span-1">
+                        <img src="Assets/Images/houses/house4/3.png" alt="" class="w-full h-full object-cover">
+                    </div>
+                    <div class="col-span-1 row-span-1">
+                        <img src="Assets/Images/houses/house4/4.png" alt="" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full bg-[url('Assets/Images/map/mobile.png')] bg-cover lg:bg-[url('Assets/Images/map/desktop.png')] h-[450px] lg:h-[750px]">
+        <div class="container mx-auto h-full pt-10 lg:pt-[85px]">
+            <p class="text-[25px] lg:text-[35px] xl:text-[45px] font-['Neumann'] bg-white w-fit px-4 py-2.5 lg:px-7 lg:py-4">Расположение</p>
+        </div>
+    </div>
+
+    <div class="w-full bg-[#F5F5F5] py-12 lg:py-[120px]">
+        <div class="container mx-auto flex flex-col items-center text-center gap-10 lg:gap-20 px-4">
+            <p class="text-[35px] lg:text-[45px] xl:text-[68px] font-['Neumann'] text-[#28292E] text-center">Фото посёлка</p>
+            <div class="grid grid-cols-3 grid-rows-3 gap-0.5 lg:gap-2.5">
+                <div class="row-span-1 col-span-2">
+                    <img src="Assets/Images/photo/1.png" alt="" class="object-cover w-full h-full">
+                </div>
+                <div class="row-span-1 col-span-1">
+                    <img src="Assets/Images/photo/2.png" alt="" class="object-cover w-full h-full">
+                </div>
+                <div class="row-span-2 col-span-1">
+                    <img src="Assets/Images/photo/3.png" alt="" class="object-cover w-full h-full">
+                </div>
+                <div class="row-span-1 col-span-1">
+                    <img src="Assets/Images/photo/4.png" alt="" class="object-cover w-full h-full">
+                </div>
+                <div class="row-span-1 col-span-1">
+                    <img src="Assets/Images/photo/5.png" alt="" class="object-cover w-full h-full">
+                </div>
+                <div class="row-span-1 col-span-2">
+                    <img src="Assets/Images/photo/6.png" alt="" class="object-cover w-full h-full">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full bg-[url('Assets/Images/genplan/mobile.png')] md:bg-[url('Assets/Images/genplan/desktop.png')] bg-cover h-[500px] md:h-[750px] bg-right"></div>
 
     <footer></footer>
     
