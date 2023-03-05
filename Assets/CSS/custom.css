@@ -33,3 +33,6 @@
     background: #F5F5F5;
     box-shadow: inset 0px 2px 0px #EBEBEB;
 }
+.swiper-button-disabled {
+    opacity: 35%;
+}

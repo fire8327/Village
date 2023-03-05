@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="Assets/CSS/custom.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Главная</title>
@@ -208,12 +209,77 @@
         </div>
     </div>
 
+    <div class="w-full bg-white flex flex-col">
+        <div class="flex flex-col lg:flex-row">
+            <div class="flex flex-col py-10 px-4 xl:px-0 lg:py-0 lg:pt-20 xl:pt-36 lg:px-20 xl:pl-[185px] w-full lg:w-1/2 bg-[url('Assets/Images/territory/bg1.png')] bg-cover text-[#28292E]">
+                <p class="text-[25px] lg:text-[35px] xl:text-[45px] font-['Neumann'] mt-2.5 lg:mt-0">Территория</p>
+                <p class="font-['Museo'] w-full font-[300] md:text-lg lg:text-xl xl:w-[360px] mt-4 md:mt-5 lg:mt-6">
+                    «КП «Крёкшино Вилладж» является закрытой охраняемой территорией.
+                    Посёлок граничит с живописными чистыми прудами. Крёкшино было излюбленным местом посещений 
+                    Л.Н. Толстого»
+                </p>
+                <div class="flex items-center gap-4 md:gap-5 lg:gap-6 mt-5 md:mt-10 lg:mt-20">
+                    <button class="rounded-full items-center flex justify-center bg-[#007AFF] px-5 py-4 territory-prev">
+                        <img src="Assets/Images/territory/left.svg" alt="">
+                    </button>
+                    <button class="rounded-full items-center flex justify-center bg-[#007AFF] px-5 py-4 territory-next">
+                        <img src="Assets/Images/territory/right.svg" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="swiper swiper-territory w-full lg:w-1/2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="Assets/Images/territory/1.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Assets/Images/territory/1.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Assets/Images/territory/1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col lg:flex-row">
+            <div class="flex flex-col py-10 px-4 lg:px-10 xl:px-0 lg:pt-8 lg:pb-0 xl:py-20 xl:pl-[115px] w-full lg:w-1/2 bg-[url('Assets/Images/territory/bg2.png')] bg-cover text-[#28292E]">
+                <p class="text-[25px] lg:text-[35px] xl:text-[45px] font-['Neumann'] mt-2.5 lg:mt-0">Транспортная доступность</p>
+                <p class="font-['Museo'] w-full font-[300] md:text-lg lg:text-xl xl:w-[470px] mt-4 md:mt-5 lg:mt-6">
+                    Очень удобная транспортная доступность до Крёкшино, обеспечивается наличием Минского скоростного шоссе, Киевского скоростного шоссе, а также наличием электрички - ж/д станция Крёкшино находится в 15 минутах ходьбы. <span class="lg:hidden xl:inline"> Школы, детские сады, продуктовые магазины, рынки, рестораны находится в непосредственной близости.</span>
+                </p>
+                <div class="flex items-center gap-4 md:gap-5 lg:gap-6 mt-5 md:mt-10 lg:mt-20">
+                    <button class="rounded-full items-center flex justify-center bg-[#007AFF] px-5 py-4 transport-prev">
+                        <img src="Assets/Images/territory/left.svg" alt="">
+                    </button>
+                    <button class="rounded-full items-center flex justify-center bg-[#007AFF] px-5 py-4 transport-next">
+                        <img src="Assets/Images/territory/right.svg" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="swiper swiper-transport w-full lg:w-1/2 lg:order-first">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="Assets/Images/territory/2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Assets/Images/territory/2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Assets/Images/territory/2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer></footer>
     
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.3.min.js" 
     integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
     crossorigin="anonymous"></script>
+	<script src="Assets/JS/slider.js"></script>
 	<script src="Assets/JS/custom.js"></script>
 </body>
 </html>
