@@ -40,4 +40,8 @@ const swiper7 = new Swiper('.swiper-room', {
     nextEl: '.room-next',
     prevEl: '.room-prev',
   },
+  pagination: {
+    el: '.room-pagination',
+    type: 'bullets',
+  },
 });

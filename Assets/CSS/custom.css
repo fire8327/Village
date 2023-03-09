@@ -39,3 +39,16 @@
 .swiper-button-prev::after,.swiper-button-next::after {
     display: none;
 }
+.swiper-pagination-bullet
+{
+    background: #000;
+    opacity: 100%;
+    width: 6px;
+    height: 6px;
+}
+.swiper-pagination-bullet-active
+{
+    background: #007AFF;
+    width: 10px;
+    height: 10px;
+}
