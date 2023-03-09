@@ -35,3 +35,9 @@ const swiper6 = new Swiper('.swiper-choice', {
     prevEl: '.swiper-button-prev',
   },
 });
+const swiper7 = new Swiper('.swiper-room', {
+  navigation: {
+    nextEl: '.room-next',
+    prevEl: '.room-prev',
+  },
+});
