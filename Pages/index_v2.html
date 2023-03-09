@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../Assets/CSS/custom.css">
+    <title>Главная v2</title>
+    <style type="text/tailwindcss">
+        .btn {
+            @apply border border-opacity-50 border-black lg:border-white;
+        }
+        .btn-active {
+            @apply bg-[#3766CC] text-white border border-[#3766CC] lg:bg-white lg:bg-opacity-30 lg:border-white lg:border-opacity-0;
+        }
+    </style>
+</head>
+<body class="text-[#28292E]">
+    <header class="w-full bg-[#00004A] lg:bg-[#333352] bg-cover text-white px-4">
+        <nav class="container mx-auto py-6 flex flex-col gap-4 lg:gap-0 lg:flex-row lg:items-center lg:justify-between font-['Museo']">
+            <a class="text-[28px] font-['Neumann']" href="../index.html">CRUKSHINO VILLAGE</a>
+            <div class="flex items-center gap-2">
+                <a href=""><img src="../Assets/Images/header/inst.svg" alt=""></a>
+                <a href=""><img src="../Assets/Images/header/vk.svg" alt=""></a>
+                <a href=""><img src="../Assets/Images/header/facebook.svg" alt=""></a>
+                <a href=""><img src="../Assets/Images/header/ok.svg" alt=""></a>
+                <a href=""><img src="../Assets/Images/header/whatsapp.svg" alt=""></a>
+            </div>
+            <div class="flex flex-col lg:text-right mt-1 lg:mt-0">
+                <p class="font-[300] text-[#FFFFF1]">Есть вопросы? <span class="text-[#E9C878]">Звоните!</span></p>
+                <a href="tel:+7 (925) 211-91-23" class="text-[26px] font-[500]">+7 (925) 211-91-23</a>
+                <div class="flex items-center gap-2">
+                    <img src="../Assets/Images/header/point.svg" alt="">
+                    <p class="font-[300] text-[#FFFFF1]">Время работы: с 8 до 20</p>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="w-full bg-[#F5F5F5] lg:bg-[#333352] pt-7 pb-12 lg:pt-14 lg:pb-[120px]">
+        <div class="container mx-auto flex flex-col">
+            <a href="../index.html" class="flex items-center gap-4 lg:gap-5 text-black stroke-black lg:text-white lg:stroke-white px-4">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.3">
+                        <rect x="0.5" y="0.5" width="31" height="31" rx="15.5"/>
+                        <path d="M17.35 12.25L13.6 16L17.35 19.75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                </svg> 
+                <p class="text-sm lg:text-base font-[500] font-['Museo'] uppercase opacity-50">К выбору коттеджей</p>
+            </a>
+            <div class="flex flex-col lg:flex-row mt-9 lg:mt-[70px] gap-5 lg:gap-[305px] px-4">
+                <div class="flex flex-col lg:gap-24">
+                    <p class="text-[35px] xl:text-[45px] font-['Neumann'] text-[#3766CC] lg:text-white w-fit">Коттедж 145</p>   
+                    <a class="lg:flex items-center gap-5 py-5 pl-12 pr-14 button w-fit hidden" href="thanks_page.html">
+                        <img src="../Assets/Images/index2/phone.svg" alt="">
+                        <p class="text-sm font-['Museo'] font-[900] text-[#6E5A45] uppercase rounded-full">оставить заявку</p>
+                    </a>
+                </div>
+                <div class="flex flex-col gap-7 lg:gap-10">
+                    <div class="grid grid-cols-2 gap-y-5 gap-x-4 lg:gap-y-10 lg:gap-x-7 font-['Museo'] text-black lg:text-white">
+                        <div class="flex flex-col">
+                            <p class="text-xs lg:text-sm font-[300] opacity-70">Стоимость</p>
+                            <p class="text-xl lg:text-2xl font-[700]">по запросу</p>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-xs lg:text-sm font-[300] opacity-70">площадь коттеджа</p>
+                            <p class="text-xl lg:text-2xl font-[700]">175 м2</p>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-xs lg:text-sm font-[300] opacity-70">площадь участка, соток</p>
+                            <p class="text-xl lg:text-2xl font-[700]">6,60</p>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-xs lg:text-sm font-[300] opacity-70">корпус</p>
+                            <p class="text-xl lg:text-2xl font-[700]">145</p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-[370px] border border-[#3766CC] lg:border-white rounded-[4px] flex items-center">
+                        <p class="w-1/2 lg:text-white opacity-70 text-[#3766CC] uppercase pl-6 lg:pl-5 py-[9px] text-sm">Особенности</p>
+                        <div class="flex gap-2 lg:gap-4 items-center bg-[#3766CC] text-white lg:bg-white lg:text-[#00004A] w-1/2 text-lg lg:text-xl py-[9px] pl-6 lg:pl-4 rounded-l-[4px]">
+                            <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[22px] h-[22px] lg:w-[27px] lg:h-[27px]">
+                                <g clip-path="url(#clip0_279_3801)" class="fill-white lg:fill-[#00004A]">
+                                    <path d="M26.9999 13.4983C26.9994 13.2245 26.8571 12.9704 26.624 12.8266L23.88 11.1351L26.6269 9.42544C26.8586 9.28127 26.9995 9.02788 26.9999 8.75508C27.0004 8.48224 26.8601 8.22843 26.6289 8.08357L13.92 0.120709C13.6631 -0.0402362 13.3368 -0.0402362 13.08 0.120709L0.371038 8.08357C0.139852 8.22843 -0.000368412 8.48224 7.27037e-07 8.75508C0.0004226 9.02793 0.141381 9.28132 0.373042 9.42544L3.10109 11.1234L0.371829 12.8293C0.140326 12.974 -0.00021021 13.2278 5.34612e-05 13.5008C0.000317132 13.7738 0.141328 14.0273 0.373095 14.1716L3.10114 15.8696L0.371829 17.5753C0.140695 17.7198 0.000211664 17.9731 5.34612e-05 18.2457C-0.000104741 18.5183 0.140115 18.7717 0.371091 18.9164L13.08 26.8793C13.2085 26.9598 13.3542 27 13.5 27C13.6458 27 13.7916 26.9598 13.92 26.8793L26.6289 18.9164C26.8606 18.7713 27.0009 18.5167 26.9999 18.2432C26.9989 17.9698 26.8568 17.7163 26.624 17.5728L23.88 15.8813L26.6269 14.1716C26.8594 14.0269 27.0005 13.7722 26.9999 13.4983ZM2.28444 8.75176L13.5 1.72457L24.7156 8.75176C24.6078 8.81884 13.8214 15.5323 13.5 15.7324L2.28444 8.75176ZM24.7104 18.2516L13.5 25.2755L2.28223 18.247L4.59668 16.8004L13.082 22.0817C13.21 22.1614 13.355 22.2012 13.5 22.2012C13.645 22.2012 13.79 22.1614 13.918 22.0817L22.3799 16.815L24.7104 18.2516ZM13.5 20.4785L2.28576 13.4987L4.59668 12.0543L13.082 17.3357C13.21 17.4153 13.355 17.4551 13.5 17.4551C13.645 17.4551 13.79 17.4153 13.918 17.3357L22.3799 12.0689L24.7068 13.5033C24.6425 13.5433 13.7969 20.2936 13.5 20.4785Z"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_279_3801">
+                                        <rect width="27" height="27"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>                                
+                            <p class="font-['Museo'] font-[700]">WhiteBox</p>
+                        </div>
+                    </div>
+                    <a class="lg:hidden flex items-center gap-5 py-5 pl-12 pr-14 button w-fit mt-2" href="thanks_page.html">
+                        <img src="../Assets/Images/index2/phone.svg" alt="">
+                        <p class="text-sm font-['Museo'] font-[900] text-[#6E5A45] uppercase rounded-full">оставить заявку</p>
+                    </a>
+                </div>
+            </div>
+            <picture>
+                <source media="(min-width: 1024px)" srcset="../Assets/Images/index2/desktop.png">
+                <img src="../Assets/Images/index2/mobile.png" alt="" class="w-full px-0 mt-12 lg:mt-[90px] lg:px-4">
+            </picture>
+            <div class="flex flex-col lg:flex-row mt-10 lg:mt-[120px] gap-10 items-center lg:justify-between px-4">
+                <div class="flex flex-row lg:flex-col gap-4 lg:gap-6 text-black lg:text-white xl:pl-[70px]">
+                    <button type="button" id="btn1" class="rounded-full flex flex-col items-center justify-center w-[90px] h-[90px] btn btn-active transition-all duration-500">
+                        <p class="font-['Neumann'] text-3xl">1</p>
+                        <p class="text-[10px] font-['Museo'] font-[700] uppercase">этаж</p>
+                    </button>
+                    <button type="button" id="btn2" class="rounded-full flex flex-col items-center justify-center w-[90px] h-[90px] btn transition-all duration-500">
+                        <p class="font-['Neumann'] text-3xl">2</p>
+                        <p class="text-[10px] font-['Museo'] font-[700] uppercase">этаж</p>
+                    </button>
+                </div>
+                <div class="relative max-w-[328px] md:max-w-[570px] w-full h-[328px] md:h-[570px]">   
+                    <img src="../Assets/Images/index2/plan.png" id="img1" alt="" class="absolute w-full top-0 left-0 transition-all duration-500">
+                    <img src="../Assets/Images/index2/plan.png" id="img2" alt="" class="absolute w-full top-0 left-0 transition-all duration-500 opacity-0 rotate-90">
+                </div>
+                <div class="flex flex-col gap-7 lg:gap-10 lg:items-center text-[15px] font-['Neumann'] text-[#3766CC] lg:text-white w-fit">
+                    <div class="flex flex-row lg:flex-col gap-9 lg:gap-5 items-center lg:text-center">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 lg:w-14 lg:h-14 shrink-0 fill-[#3766CC] lg:fill-white">
+                            <g clip-path="url(#clip0_279_3763)">
+                                <path d="M29.9999 9.52209C18.7083 9.52209 9.52197 18.7085 9.52197 30C9.52197 41.2915 18.7083 50.478 29.9999 50.478C41.2915 50.478 50.4778 41.2915 50.4778 30C50.4778 18.7085 41.2914 9.52209 29.9999 9.52209ZM29.9999 48.1342C20.0006 48.1342 11.8657 39.9993 11.8657 30C11.8657 20.0008 20.0006 11.8658 29.9999 11.8658C39.9992 11.8658 48.1341 20.0008 48.1341 30C48.1341 39.9993 39.9992 48.1342 29.9999 48.1342Z"/>
+                                <path d="M56.7539 23.5745H55.7603C55.1258 21.0193 54.1187 18.59 52.7571 16.33L53.4615 15.6257C54.7271 14.3599 54.7271 12.3007 53.4615 11.035L48.9652 6.53859C47.6994 5.27309 45.6402 5.27309 44.3745 6.53859L43.6702 7.24301C41.4103 5.88152 38.9808 4.87441 36.4256 4.23984V3.24609C36.4256 1.45629 34.9695 0 33.1795 0H26.8207C25.0308 0 23.5746 1.45629 23.5746 3.24609V4.23973C21.0193 4.8743 18.5899 5.88141 16.3301 7.24289L15.6258 6.53848C14.36 5.27297 12.3008 5.27297 11.0351 6.53848L6.53859 11.035C5.27297 12.3007 5.27297 14.3599 6.53859 15.6257L7.24301 16.33C5.88141 18.59 4.8743 21.0195 4.23984 23.5745H3.24609C1.45629 23.5745 0 25.0307 0 26.8206V33.1794C0 34.9693 1.45629 36.4255 3.24609 36.4255H4.23973C4.87418 38.9807 5.88129 41.41 7.24289 43.67L6.53848 44.3743C5.27285 45.6401 5.27285 47.6993 6.53848 48.965L11.0348 53.4614C12.3006 54.7269 14.3598 54.7269 15.6255 53.4614L16.3298 52.757C18.5897 54.1185 21.0192 55.1256 23.5744 55.7602V56.7538C23.5744 58.5436 25.0305 59.9999 26.8205 59.9999H33.1793C34.9692 59.9999 36.4254 58.5436 36.4254 56.7538V55.7602C38.9807 55.1256 41.4101 54.1185 43.6699 52.757L44.3742 53.4614C45.64 54.7269 47.6992 54.7269 48.9649 53.4614L53.4613 48.965C54.7269 47.6993 54.7269 45.6401 53.4613 44.3743L52.7569 43.67C54.1185 41.41 55.1256 38.9805 55.76 36.4255H56.7537C58.5435 36.4255 59.9998 34.9693 59.9998 33.1794V26.8206C60 25.0307 58.5437 23.5745 56.7539 23.5745ZM57.6562 33.1794C57.6562 33.677 57.2515 34.0818 56.7539 34.0818H54.8269C54.2728 34.0818 53.7942 34.47 53.6802 35.0121C53.0647 37.9349 51.9231 40.6891 50.2868 43.1985C49.9842 43.6627 50.048 44.2754 50.4398 44.6672L51.8043 46.0316C52.1561 46.3834 52.1561 46.9559 51.8043 47.3077L47.3079 51.804C46.9561 52.1558 46.3836 52.1558 46.0318 51.804L44.6674 50.4396C44.2755 50.0477 43.6628 49.9843 43.1987 50.2866C40.6896 51.9227 37.9354 53.0644 35.0123 53.68C34.4701 53.7942 34.082 54.2726 34.082 54.8266V56.7539C34.082 57.2515 33.6772 57.6562 33.1796 57.6562H26.8208C26.3232 57.6562 25.9185 57.2515 25.9185 56.7539V54.8269C25.9185 54.2728 25.5302 53.7943 24.9881 53.6802C22.0651 53.0646 19.3109 51.923 16.8018 50.2868C16.6057 50.1591 16.3833 50.0966 16.162 50.0966C15.8595 50.0966 15.5593 50.2134 15.333 50.4398L13.9686 51.8043C13.6168 52.1561 13.0444 52.1561 12.6926 51.8043L8.19621 47.3079C7.84441 46.9561 7.84441 46.3836 8.19621 46.0318L9.56063 44.6674C9.9525 44.2755 10.0162 43.6629 9.71367 43.1987C8.07738 40.6894 6.93574 37.9351 6.32027 35.0123C6.20613 34.4701 5.72766 34.082 5.17359 34.082H3.24609C2.74852 34.082 2.34375 33.6772 2.34375 33.1796V26.8208C2.34375 26.3232 2.74852 25.9185 3.24609 25.9185H5.17313C5.7273 25.9185 6.20578 25.5302 6.3198 24.9881C6.93527 22.0654 8.07691 19.3111 9.7132 16.8018C10.0158 16.3376 9.95203 15.7249 9.56016 15.333L8.19574 13.9686C7.84395 13.6168 7.84395 13.0444 8.19574 12.6926L12.6921 8.19621C13.0439 7.84441 13.6164 7.84441 13.9682 8.19621L15.3326 9.56063C15.7246 9.95262 16.3375 10.0161 16.8013 9.71367C19.3104 8.0775 22.0646 6.93586 24.9877 6.32027C25.5299 6.20602 25.918 5.72766 25.918 5.17359V3.24609C25.918 2.74852 26.3228 2.34375 26.8204 2.34375H33.1792C33.6768 2.34375 34.0815 2.74852 34.0815 3.24609V5.17313C34.0815 5.7273 34.4698 6.20566 35.0119 6.3198C37.9349 6.93539 40.6891 8.07703 43.1982 9.7132C43.6624 10.0155 44.2751 9.95203 44.667 9.56016L46.0314 8.19574C46.3832 7.84395 46.9556 7.84395 47.3074 8.19574L51.8038 12.6921C52.1556 13.0439 52.1556 13.6164 51.8038 13.9682L50.4394 15.3326C50.0475 15.7245 49.9837 16.3371 50.2863 16.8013C51.9226 19.3106 53.0643 22.0649 53.6797 24.9877C53.7939 25.5299 54.2723 25.918 54.8264 25.918H56.7539C57.2515 25.918 57.6562 26.3228 57.6562 26.8204V33.1794Z"/>
+                                <path d="M37.6854 26.3875L33.1485 26.5554L33.8518 17.0657C33.891 16.5373 33.5708 16.0483 33.0706 15.8731C32.5706 15.6978 32.0151 15.88 31.7161 16.3173L21.3043 31.5355C21.0588 31.8944 21.0322 32.3595 21.2349 32.744C21.4377 33.1285 21.8367 33.3692 22.2715 33.3692H28.0054L26.7205 42.8639C26.6467 43.4092 26.9622 43.9324 27.479 44.1215C27.6111 44.1699 27.747 44.193 27.8816 44.193C28.2731 44.193 28.6502 43.996 28.8703 43.6505L38.7173 28.1881C38.9513 27.8206 38.9622 27.3538 38.7457 26.9759C38.5288 26.5981 38.1211 26.3707 37.6854 26.3875ZM29.7582 37.8926L30.5079 32.3544C30.5532 32.0194 30.4516 31.681 30.229 31.4262C30.0065 31.1716 29.6846 31.0254 29.3465 31.0254H24.4931L31.1928 21.2328L30.7144 27.6882C30.6897 28.0206 30.8079 28.3479 31.0392 28.588C31.2705 28.828 31.5928 28.9583 31.9263 28.9459L35.5411 28.8121L29.7582 37.8926Z"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_279_3763">
+                                    <rect width="60" height="60"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <p class="lg:w-[170px]">ВСЕ ДЕЙСТВУЮЩИЕ КОММУНИКАЦИИ</p>
+                    </div>
+                    <div class="flex flex-row lg:flex-col gap-9 lg:gap-5 items-center lg:text-center">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 lg:w-14 lg:h-14 shrink-0 fill-[#3766CC] lg:fill-white">
+                            <g clip-path="url(#clip0_279_3741)">
+                                <path d="M59.9951 20.0002C59.9953 19.6693 59.8353 19.3518 59.5479 19.1638L30.5479 0.163801C30.2159 -0.0539492 29.7843 -0.0539492 29.4521 0.163801L0.452125 19.1638C0.16475 19.3518 0.00475 19.6693 0.004875 20.0002H0V59.0002C0 59.5524 0.44725 60.0002 1 60.0002H9C9.55275 60.0002 10 59.5524 10 59.0002V27.0002H50V59.0002C50 59.5524 50.4473 60.0002 51 60.0002H59C59.5527 60.0002 60 59.5524 60 59.0002V20.0002H59.9951ZM30 2.19555L55.6494 19.0003H4.35063L30 2.19555ZM58 58.0002H52V26.0002C52 25.4479 51.5527 25.0002 51 25.0002H9C8.44725 25.0002 8 25.4479 8 26.0002V58.0002H2V21.0002H58V58.0002Z"/>
+                                <path d="M56 27.9999H54V33.9999H56V27.9999Z"/>
+                                <path d="M56 35.5126H54V37.5151H56V35.5126Z"/>
+                                <path d="M56 39H54V41.0025H56V39Z"/>
+                                <path d="M6 27.9999H4V33.9999H6V27.9999Z"/>
+                                <path d="M6 35.5126H4V37.5151H6V35.5126Z"/>
+                                <path d="M6 39H4V41.0025H6V39Z"/>
+                                <path d="M46 46.9999V44.9999H43.9305C43.4359 41.0599 40.0718 37.9999 36 37.9999H24C19.9282 37.9999 16.5641 41.0599 16.0695 44.9999H14V46.9999H16V48.1841C14.8385 48.5983 14 49.6979 14 50.9999V54.9999V56.9999C14 58.6541 15.3457 59.9999 17 59.9999H19C20.6543 59.9999 22 58.6541 22 56.9999V55.9999H38V56.9999C38 58.6541 39.3458 59.9999 41 59.9999H43C44.6542 59.9999 46 58.6541 46 56.9999V54.9999V50.9999C46 49.6979 45.1615 48.5983 44 48.1841V46.9999H46ZM18 45.9999C18 42.6913 20.6914 39.9999 24 39.9999H36C39.3086 39.9999 42 42.6913 42 45.9999V47.9999H18V45.9999ZM20 56.9999C20 57.5511 19.5518 57.9999 19 57.9999H17C16.4483 57.9999 16 57.5511 16 56.9999V55.9999H20V56.9999ZM44 56.9999C44 57.5511 43.5518 57.9999 43 57.9999H41C40.4482 57.9999 40 57.5511 40 56.9999V55.9999H44V56.9999ZM44 52.9999V53.9999H39H21H16V52.9999H19V50.9999H16C16 50.4486 16.4483 49.9999 17 49.9999H43C43.5518 49.9999 44 50.4486 44 50.9999H41V52.9999H44Z"/>
+                                <path d="M48 28.9999H12C11.4473 28.9999 11 29.4476 11 29.9999V33.9999C11 34.5521 11.4473 34.9999 12 34.9999H48C48.5527 34.9999 49 34.5521 49 33.9999V29.9999C49 29.4476 48.5527 28.9999 48 28.9999ZM47 32.9999H13V30.9999H47V32.9999Z"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_279_3741">
+                                    <rect width="60" height="60"/>
+                                </clipPath>
+                            </defs>
+                        </svg>                            
+                        <p class="lg:w-[170px]">НАВЕС ДЛЯ МАШИНЫ</p>
+                    </div>
+                    <div class="flex flex-row lg:flex-col gap-9 lg:gap-5 items-center lg:text-center">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 lg:w-14 lg:h-14 shrink-0 fill-[#3766CC] lg:fill-white">
+                            <g clip-path="url(#clip0_279_3708)">
+                                <path d="M52.5015 10.8984C53.1487 10.8984 53.6733 10.3738 53.6733 9.72656V3.51562C53.6733 1.57711 52.0962 0 50.1577 0H3.51709C1.57857 0 0.00146484 1.57711 0.00146484 3.51562V56.4844C0.00146484 58.4229 1.57857 60 3.51709 60H50.1577C52.0962 60 53.6733 58.4229 53.6733 56.4844V53.2031C53.6733 52.5559 53.1487 52.0312 52.5015 52.0312C51.8542 52.0312 51.3296 52.5559 51.3296 53.2031V56.4844C51.3296 57.1305 50.8039 57.6562 50.1577 57.6562H3.51709C2.87092 57.6562 2.34521 57.1305 2.34521 56.4844V3.51562C2.34521 2.86945 2.87092 2.34375 3.51709 2.34375H50.1577C50.8039 2.34375 51.3296 2.86945 51.3296 3.51562V9.72656C51.3296 10.3738 51.8542 10.8984 52.5015 10.8984Z"/>
+                                <path d="M46.8762 5.625H6.79663C6.1494 5.625 5.62476 6.14965 5.62476 6.79688V31.2891C5.62476 31.9363 6.1494 32.4609 6.79663 32.4609C7.44386 32.4609 7.96851 31.9363 7.96851 31.2891V7.96875H45.7043V9.84375C45.7043 10.491 46.2291 11.0156 46.8762 11.0156C47.5234 11.0156 48.048 10.491 48.048 9.84375V6.79688C48.048 6.14965 47.5234 5.625 46.8762 5.625Z"/>
+                                <path d="M7.62466 34.7965C7.40669 34.5785 7.10552 34.4531 6.79614 34.4531C6.48794 34.4531 6.1856 34.5785 5.96763 34.7965C5.74966 35.0145 5.62427 35.3168 5.62427 35.625C5.62427 35.9332 5.74966 36.2355 5.96763 36.4535C6.1856 36.6715 6.48794 36.7969 6.79614 36.7969C7.10552 36.7969 7.40669 36.6715 7.62466 36.4535C7.8438 36.2355 7.96802 35.9332 7.96802 35.625C7.96802 35.3168 7.8438 35.0145 7.62466 34.7965Z"/>
+                                <path d="M46.8762 49.4531C46.229 49.4531 45.7043 49.9778 45.7043 50.625V52.0312H7.96851V40.1367C7.96851 39.4895 7.44386 38.9648 6.79663 38.9648C6.1494 38.9648 5.62476 39.4895 5.62476 40.1367V53.2031C5.62476 53.8504 6.1494 54.375 6.79663 54.375H46.8762C47.5234 54.375 48.048 53.8504 48.048 53.2031V50.625C48.048 49.9778 47.5234 49.4531 46.8762 49.4531Z"/>
+                                <path d="M36.3172 41.4065C35.8596 40.9488 35.1177 40.9488 34.66 41.4064L32.3439 43.7226L30.9042 42.2829C29.9952 41.374 28.5164 41.374 27.6074 42.2829L26.6706 43.2197C26.213 43.6773 26.213 44.4193 26.6706 44.8771C27.1282 45.3347 27.8703 45.3347 28.328 44.8771L29.2559 43.9492L30.6955 45.3889C31.15 45.8434 31.7469 46.0706 32.3439 46.0706C32.9408 46.0706 33.5378 45.8434 33.9922 45.3889L36.3172 43.0639C36.7749 42.6063 36.7749 41.8643 36.3172 41.4065Z"/>
+                                <path d="M59.4608 24.5839C59.9773 23.7782 60.1315 22.7859 59.8838 21.8615C59.636 20.9371 59.0065 20.1549 58.1563 19.7154C57.7876 19.5249 57.5619 19.134 57.5813 18.7195C57.6257 17.7635 57.2631 16.8271 56.5865 16.1504C55.9098 15.4737 54.9737 15.1106 54.0174 15.1556C53.6009 15.1757 53.2119 14.9491 53.0214 14.5805C52.5819 13.7304 51.7997 13.1008 50.8753 12.8531C49.9506 12.6052 48.9586 12.7595 48.1531 13.276C47.8037 13.5001 47.3523 13.4999 47.0031 13.276C46.1974 12.7594 45.2053 12.6053 44.2808 12.8531C43.3565 13.1008 42.5742 13.7304 42.1348 14.5805C41.9442 14.9492 41.5522 15.1743 41.1388 15.1556C40.1824 15.1109 39.2465 15.4737 38.5698 16.1504C37.8931 16.8271 37.5305 17.7635 37.5749 18.7193C37.5942 19.134 37.3684 19.5249 36.9999 19.7154C36.1498 20.1549 35.5201 20.937 35.2724 21.8615C35.1542 22.3025 35.1285 22.7589 35.1891 23.2032H14.7399C14.0926 23.2032 13.568 23.7278 13.568 24.3751C13.568 25.0223 14.0926 25.5469 14.7399 25.5469H35.7878C35.7626 25.6113 35.7334 25.6744 35.6952 25.734C35.1788 26.5396 35.0245 27.532 35.2723 28.4563C35.3063 28.5833 35.3481 28.7072 35.3961 28.8282H14.7395C14.0923 28.8282 13.5676 29.3528 13.5676 30.0001C13.5676 30.6473 14.0923 31.1719 14.7395 31.1719H37.5049C37.5559 31.3059 37.5815 31.4504 37.5745 31.5984C37.5301 32.5544 37.8927 33.4907 38.5695 34.1675C39.2461 34.8441 40.1821 35.2074 41.1384 35.1623C41.5525 35.142 41.9439 35.3686 42.1344 35.7373C42.2752 36.0097 42.4515 36.2589 42.656 36.4808V47.4252C42.656 47.8987 42.9409 48.3256 43.378 48.5074C43.815 48.6891 44.3187 48.59 44.6544 48.256L47.5779 45.3477L50.5014 48.256C50.7254 48.4789 51.0242 48.5971 51.3281 48.5971C51.4795 48.5971 51.6324 48.5677 51.7778 48.5072C52.2149 48.3255 52.4998 47.8986 52.4998 47.4251V36.4806C52.7043 36.2589 52.8806 36.0095 53.0214 35.7372C53.2119 35.3685 53.6033 35.1433 54.0174 35.1622C54.9743 35.2074 55.9097 34.8441 56.5863 34.1674C57.2631 33.4906 57.6257 32.5543 57.5813 31.5983C57.5619 31.1838 57.7877 30.7928 58.1563 30.6023C59.0064 30.1628 59.636 29.3807 59.8838 28.4562C60.1315 27.5317 59.9773 26.5395 59.4608 25.7337C59.2368 25.3846 59.2368 24.9332 59.4608 24.5839ZM50.156 44.6065L48.4043 42.864C47.9472 42.4092 47.2085 42.4092 46.7514 42.864L44.9998 44.6065V37.5762C45.7009 37.6093 46.4036 37.426 47.003 37.0418C47.3523 36.8178 47.8037 36.8179 48.1529 37.0418C48.7064 37.3967 49.3479 37.5806 49.9951 37.5806C50.0488 37.5806 50.1024 37.5779 50.156 37.5753V44.6065ZM57.6198 27.8498C57.5413 28.1429 57.3495 28.3811 57.0799 28.5204C55.9006 29.1302 55.1782 30.381 55.24 31.7074C55.2542 32.0105 55.1436 32.2956 54.9291 32.5103C54.7145 32.7249 54.4294 32.8351 54.1262 32.8212C52.7992 32.7598 51.549 33.4817 50.9393 34.6612C50.8 34.9308 50.5617 35.1226 50.2685 35.2011C49.9756 35.2795 49.6732 35.2327 49.4179 35.0689C48.8589 34.7105 48.2184 34.5315 47.5778 34.5315C46.9374 34.5315 46.2967 34.7106 45.7378 35.0689C45.4824 35.2326 45.1801 35.2795 44.887 35.2011C44.5938 35.1226 44.3557 34.9307 44.2163 34.6612C43.6065 33.4818 42.3566 32.7592 41.0293 32.8212C40.7269 32.8352 40.4411 32.7249 40.2265 32.5103C40.0118 32.2956 39.9014 32.0105 39.9156 31.7072C39.9591 30.7711 39.6107 29.8737 38.9881 29.2117C38.9698 29.1917 38.9511 29.172 38.9315 29.1533C38.6842 28.9026 38.3977 28.687 38.0756 28.5204C37.8061 28.3811 37.6144 28.143 37.5359 27.8498C37.4574 27.5566 37.5042 27.2544 37.6681 26.999C38.3847 25.8813 38.3847 24.4368 37.6681 23.3191C37.5043 23.0636 37.4574 22.7614 37.5359 22.4682C37.6144 22.1751 37.8062 21.9369 38.0758 21.7975C39.2551 21.1878 39.9774 19.9369 39.9157 18.6106C39.9015 18.3074 40.012 18.0223 40.2266 17.8076C40.4412 17.5929 40.7269 17.4828 41.0295 17.4967C42.3566 17.5583 43.6068 16.8363 44.2164 15.6568C44.3557 15.3871 44.594 15.1954 44.8872 15.1169C45.1802 15.0385 45.4825 15.0852 45.7378 15.2491C46.8557 15.9658 48.3002 15.9658 49.4177 15.2491C49.6732 15.0854 49.9753 15.0383 50.2685 15.1169C50.5617 15.1954 50.7999 15.3872 50.9393 15.6568C51.549 16.8361 52.7998 17.5586 54.1262 17.4967C54.4295 17.4829 54.7145 17.5929 54.9291 17.8076C55.1438 18.0223 55.2542 18.3074 55.24 18.6106C55.1783 19.9368 55.9004 21.1878 57.0801 21.7975C57.3496 21.9369 57.5413 22.175 57.6198 22.4682C57.6983 22.7614 57.6515 23.0636 57.4876 23.319C56.771 24.4367 56.771 25.8811 57.4876 26.9989C57.6515 27.2543 57.6984 27.5566 57.6198 27.8498Z"/>
+                                <path d="M53.151 21.971C52.6934 21.5134 51.9513 21.5134 51.4937 21.971L47.6042 25.8607L46.0558 24.3123C45.5982 23.8547 44.8561 23.8547 44.3984 24.3123C43.9408 24.7699 43.9408 25.512 44.3984 25.9697L46.7754 28.3467C47.0043 28.5756 47.3042 28.69 47.604 28.69C47.9039 28.69 48.2039 28.5756 48.4327 28.3467L53.151 23.6284C53.6086 23.1708 53.6086 22.4288 53.151 21.971Z"/>
+                                <path d="M14.3056 14.1715C14.0876 13.9535 13.7853 13.8281 13.4771 13.8281C13.1688 13.8281 12.8665 13.9535 12.6485 14.1715C12.4306 14.3895 12.3052 14.6918 12.3052 15C12.3052 15.3082 12.4306 15.6105 12.6485 15.8285C12.8665 16.0465 13.1688 16.1719 13.4771 16.1719C13.7853 16.1719 14.0876 16.0465 14.3056 15.8285C14.5235 15.6105 14.6489 15.3082 14.6489 15C14.6489 14.6918 14.5235 14.3895 14.3056 14.1715Z"/>
+                                <path d="M23.5542 13.8281H17.8511C17.2038 13.8281 16.6792 14.3528 16.6792 15C16.6792 15.6472 17.2038 16.1719 17.8511 16.1719H23.5542C24.2015 16.1719 24.7261 15.6472 24.7261 15C24.7261 14.3528 24.2015 13.8281 23.5542 13.8281Z"/>
+                                <path d="M35.4889 34.4531H22.0918C21.4446 34.4531 20.9199 34.9778 20.9199 35.625C20.9199 36.2722 21.4446 36.7969 22.0918 36.7969H35.4888C36.136 36.7969 36.6607 36.2722 36.6607 35.625C36.6607 34.9778 36.1361 34.4531 35.4889 34.4531Z"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_279_3708">
+                                    <rect width="60" height="60"/>
+                                </clipPath>
+                            </defs>
+                        </svg>                                                      
+                        <p class="lg:w-[170px]">ОФОРМЛЕНА СОБСТВЕННОСТЬ НА ДОМ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full bg-[#F5F5F5] lg:py-[120px] py-12">
+        <div class="container mx-auto flex flex-col gap-9 xl:gap-[70px] items-center px-4">
+            <div class="flex flex-col lg:flex-row items-center gap-7 xl:gap-14">
+                <div class="flex flex-col">
+                    <p class="text-[35px] lg:text-[45px] xl:text-[68px] font-['Neumann'] text-[#28292E]">Преимущества</p>
+                    <p class="text-[25px] lg:text-[35px] xl:text-[45px] font-['Neumann'] text-[#28292E] mt-1 md:mt-2 lg:mt-4">вашего нового дома в Москве</p>
+                    <p class="mt-9 xl:mt-10 font-['Museo'] font-[300] text-xl lg:text-[22px] w-full xl:w-[570px]">КП «Крёкшино Вилладж» спроектирован <br class="hidden xl:block"> в ультрамодном европейском архитектурном стиле.</p>
+                    <p class="mt-7 md:mt-10 xl:mt-14 font-['Museo'] font-[300] text-xl lg:text-[22px] w-full xl:w-[570px]">И это, подчёркивает его индивидуальность. <br class="hidden xl:block"> Каждый дом, гармонично вливается, в единое целое коттеджного посёлка.</p>
+                </div>
+                <img src="../Assets/Images/advantages/house.png" alt="">
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 w-full text-center">
+                <div class="py-5 pt-5 pb-6 lg:pt-7 lg:px-6 lg:pb-10 flex flex-col items-center relative border gap-4 lg:gap-7">
+                    <p class="absolute font-['Neumann'] text-xl text-[#E9C878] top-5 left-5 lg:top-7 lg:left-6">01</p>
+                    <img src="../Assets/Images/advantages/1.svg" alt="">
+                    <p class="text-lg lg:text-xl font-['Museo'] font-[300]">Ипотека от 6%</p>
+                </div>
+                <div class="py-5 pt-5 pb-6 lg:pt-7 lg:px-6 lg:pb-10 flex flex-col items-center relative border gap-4 lg:gap-7">
+                    <p class="absolute font-['Neumann'] text-xl text-[#E9C878] top-5 left-5 lg:top-7 lg:left-6">02</p>
+                    <img src="../Assets/Images/advantages/2.svg" alt="">
+                    <p class="text-lg lg:text-xl font-['Museo'] font-[300]">Первый взнос: 10%</p>
+                </div>
+                <div class="py-5 pt-5 pb-6 lg:pt-7 lg:px-6 lg:pb-10 flex flex-col items-center relative border gap-4 lg:gap-7">
+                    <p class="absolute font-['Neumann'] text-xl text-[#E9C878] top-5 left-5 lg:top-7 lg:left-6">03</p>
+                    <img src="../Assets/Images/advantages/3.svg" alt="">
+                    <p class="text-lg lg:text-xl font-['Museo'] font-[300]">Навес для 2-х машин</p>
+                </div>
+                <div class="py-5 pt-5 pb-6 lg:pt-7 lg:px-6 lg:pb-10 flex flex-col items-center relative border gap-4 lg:gap-7">
+                    <p class="absolute font-['Neumann'] text-xl text-[#E9C878] top-5 left-5 lg:top-7 lg:left-6">04</p>
+                    <img src="../Assets/Images/advantages/4.svg" alt="">
+                    <p class="text-lg lg:text-xl font-['Museo'] font-[300]">Московская прописка</p>
+                </div>
+                <div class="py-5 pt-5 pb-6 lg:pt-7 lg:px-6 lg:pb-10 flex flex-col items-center relative border gap-4 lg:gap-7">
+                    <p class="absolute font-['Neumann'] text-xl text-[#E9C878] top-5 left-5 lg:top-7 lg:left-6">05</p>
+                    <img src="../Assets/Images/advantages/5.svg" alt="">
+                    <p class="text-lg lg:text-xl font-['Museo'] font-[300]">Все коммуникации: Вода, Канализация, Электричество</p>
+                </div>
+                <div class="py-5 pt-5 pb-6 lg:pt-7 lg:px-6 lg:pb-10 flex flex-col items-center relative border gap-4 lg:gap-7">
+                    <p class="absolute font-['Neumann'] text-xl text-[#E9C878] top-5 left-5 lg:top-7 lg:left-6">06</p>
+                    <img src="../Assets/Images/advantages/6.svg" alt="">
+                    <p class="text-lg lg:text-xl font-['Museo'] font-[300]">Стены отделаны облицовочным кирпичом</p>
+                </div>
+                <div class="py-5 pt-5 pb-6 lg:pt-7 lg:px-6 lg:pb-10 flex flex-col items-center relative border gap-4 lg:gap-7">
+                    <p class="absolute font-['Neumann'] text-xl text-[#E9C878] top-5 left-5 lg:top-7 lg:left-6">07</p>
+                    <img src="../Assets/Images/advantages/7.svg" alt="">
+                    <p class="text-lg lg:text-xl font-['Museo'] font-[300]">Дом стоит на УШП (утеплённой шведской плите)</p>
+                </div>
+                <div class="py-5 pt-5 pb-6 lg:pt-7 lg:px-6 lg:pb-10 flex flex-col items-center relative border gap-4 lg:gap-7">
+                    <p class="absolute font-['Neumann'] text-xl text-[#E9C878] top-5 left-5 lg:top-7 lg:left-6">08</p>
+                    <img src="../Assets/Images/advantages/8.svg" alt="">
+                    <p class="text-lg lg:text-xl font-['Museo'] font-[300]">Тёплые полы во всём доме</p>
+                </div>
+                <div class="py-5 pt-5 pb-6 lg:pt-7 lg:px-6 lg:pb-10 flex flex-col items-center relative border gap-4 lg:gap-7">
+                    <p class="absolute font-['Neumann'] text-xl text-[#E9C878] top-5 left-5 lg:top-7 lg:left-6">09</p>
+                    <img src="../Assets/Images/advantages/9.svg" alt="">
+                    <p class="text-lg lg:text-xl font-['Museo'] font-[300]">Энерго-эффективное панорамное остекление</p>
+                </div>
+                <div class="py-5 pt-5 pb-6 lg:pt-7 lg:px-6 lg:pb-10 flex flex-col items-center relative border gap-4 lg:gap-7">
+                    <p class="absolute font-['Neumann'] text-xl text-[#E9C878] top-5 left-5 lg:top-7 lg:left-6">10</p>
+                    <img src="../Assets/Images/advantages/10.svg" alt="">
+                    <p class="text-lg lg:text-xl font-['Museo'] font-[300]">Встроенные напольные конвектора перед панорамным остеклением</p>
+                </div>
+                <div class="py-5 pt-5 pb-6 lg:pt-7 lg:px-6 lg:pb-10 flex flex-col items-center relative border gap-4 lg:gap-7">
+                    <p class="absolute font-['Neumann'] text-xl text-[#E9C878] top-5 left-5 lg:top-7 lg:left-6">11</p>
+                    <img src="../Assets/Images/advantages/11.svg" alt="">
+                    <p class="text-lg lg:text-xl font-['Museo'] font-[300]">Отопление, электрика и сантехника сделана по всему дому</p>
+                </div>
+                <div class="py-5 pt-5 pb-6 lg:pt-7 lg:px-6 lg:pb-10 flex flex-col items-center relative border gap-4 lg:gap-7">
+                    <p class="absolute font-['Neumann'] text-xl text-[#E9C878] top-5 left-5 lg:top-7 lg:left-6">12</p>
+                    <img src="../Assets/Images/advantages/12.svg" alt="">
+                    <p class="text-lg lg:text-xl font-['Museo'] font-[300]">Эксклюзивный лицевой кирпич ручной формовки в 3D-кладке</p>
+                </div>
+                <div class="py-5 pt-5 pb-6 md:py-10 md:justify-center flex flex-col items-center relative border gap-4 md:col-span-3 xl:col-span-4 md:flex-row md:gap-10 lg:gap-32">
+                    <p class="absolute font-['Neumann'] text-xl text-[#E9C878] top-5 left-5 lg:top-7 lg:left-6">13</p>
+                    <img src="../Assets/Images/advantages/13.svg" alt="">
+                    <p class="text-lg lg:text-xl font-['Museo'] font-[300]">Стены вашего дома сделаны из экологического керамического блока</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full bg-[url('../Assets/Images/planned/background.png')] bg-center bg-cover flex flex-col items-center justify-center min-h-[571px] lg:min-h-[778px] px-4">        
+        <p class="text-[35px] lg:text-[45px] xl:text-[68px] font-['Neumann'] text-center md:w-[328px] lg:w-[770px] uppercase text-transparent bg-clip-text bg-gradient-to-r from-white to-[#E9C878]">Запланируйте просмотр участка</p>
+        <p class="text-[25px] lg:text-[35px] xl:text-[45px] font-['Neumann'] text-white w-fit text-center mt-1 lg:mt-2.5">и зафиксируйте цену!</p>   
+        <div class="flex flex-col items-center gap-4 mt-10 lg:mt-[70px] w-full">
+            <input class="flex items-center justify-center py-6 lg:py-7 px-9 lg:px-14 w-full md:w-[370px] text-center input1 rounded-full" placeholder="Введите номер телефона"></input>
+            <button class="flex items-center gap-6 py-5 lg:py-6 px-9 lg:px-14 button w-full md:w-[370px] justify-center">
+                <img src="../Assets/Images/planned/calendar.svg" alt="">
+                <p class="text-sm font-['Museo'] font-[700] text-[#6E5A45] uppercase rounded-full w-fit">ЗАПЛАНИРОВАТЬ</p>
+            </button>
+            <div class="text-sm font-['Museo'] font-[300] text-white w-fit flex flex-col items-center text-center mt-1">
+                <p>Нажимая на кнопку, вы соглашаетесь с правилами</p> 
+                <a href="" class="underline">обработки персональных данных</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="w-full bg-[#00004A] text-white">
+        <div class="container mx-auto py-5 lg:py-11 flex flex-col gap-4 lg:gap-0 lg:flex-row lg:items-center lg:justify-between font-['Museo'] px-4">
+            <a class="text-[28px] font-['Neumann']" href="../index.html">CRUKSHINO VILLAGE</a>
+            <div class="flex items-center gap-2">
+                <a href=""><img src="../Assets/Images/header/inst.svg" alt=""></a>
+                <a href=""><img src="../Assets/Images/header/vk.svg" alt=""></a>
+                <a href=""><img src="../Assets/Images/header/facebook.svg" alt=""></a>
+                <a href=""><img src="../Assets/Images/header/ok.svg" alt=""></a>
+                <a href=""><img src="../Assets/Images/header/whatsapp.svg" alt=""></a>
+            </div>
+            <div class="flex flex-col lg:text-right mt-1 lg:mt-0">
+                <p class="font-[300] text-[#FFFFF1]">Есть вопросы? <span class="text-[#E9C878]">Звоните!</span></p>
+                <a href="tel:+7 (925) 211-91-23" class="text-[26px] font-[500]">+7 (925) 211-91-23</a>
+                <div class="flex items-center gap-2">
+                    <img src="../Assets/Images/header/point.svg" alt="">
+                    <p class="font-[300] text-[#FFFFF1]">Время работы: с 8 до 20</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+        
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js" 
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+    crossorigin="anonymous"></script>
+	<script src="../Assets/JS/slider.js"></script>
+	<script src="../Assets/JS/custom.js"></script>
+</body>
+</html>
